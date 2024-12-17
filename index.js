@@ -15,5 +15,8 @@ app.use(express.json());
 
 app.use("/code", codeRoutes);
 
+// Routes
+app.get("/", (_, res) => res.send("Hello, World!"));
+
 // Start Server
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
